@@ -1,0 +1,163 @@
+html {
+scroll-behavior: smooth;
+}
+
+
+body {
+font-family: 'Montserrat', sans-serif;
+margin: 0;
+overflow-x: hidden;
+}
+
+
+h1, h2, h3 {
+margin-bottom: 1rem;
+}
+
+
+.section {
+width: 100%;
+height: 100vh;
+padding: 4rem;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+
+.nav {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background: #111;
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem 2rem;
+box-sizing: border-box;
+z-index: 1000;
+}
+
+.menu {
+list-style: none;
+display: flex;
+gap: 1rem;
+padding: 0;
+margin: 0;
+}
+
+
+.menu a {
+color: white;
+text-decoration: none;
+}
+
+.logo-entete {
+  width: 150px;
+  margin-bottom: 1.5rem;
+}
+
+
+.formulaire {
+max-width: 300px;
+}
+
+
+.formulaire input {
+width: 100%;
+margin-bottom: 1rem;
+}
+
+
+.galerie .images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.galerie img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galerie img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.article-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.article-item .texte {
+  flex: 1;
+}
+
+.article-item .image img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.reseaux {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.reseaux img {
+  width: 40px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.reseaux img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+#entete{
+background: url('../images/Arnold Schwarzenegger.jpg') center/cover no-repeat;
+color: white;
+}
+
+
+#accueil {
+    background: url('../images/Ronnie Coleman.png') center/cover no-repeat;
+    color: white;
+}
+
+#inscription {
+    background: url('../images/Dorian Yates.jpg') center/cover no-repeat;
+    color: rgb(0, 0, 0);
+}
+
+#tableau {
+    background: url('../images/Jay Cutler.jpg') center/cover no-repeat;
+    color: white
+}
+
+#articles {
+    background: url('../images/Phil Heath.jpg') center/cover no-repeat;
+    color: white;
+}
+
+#galerie {
+    background: url('../images/Dorian Yates.jpg') center/cover no-repeat;
+    color: rgb(0, 0, 0);
+}
+
+#footer {
+    background: url('../images/Kevin\ Levrone.jpg') center/cover no-repeat;
+    color: rgb(0, 0, 0);
+}
